@@ -1,0 +1,24 @@
+version: '3'
+services:
+  windows1:
+    build: ./windows
+    networks:
+      - network1
+  windows2:
+    build: ./windows
+    networks:
+      - network1
+  windows3:
+    build: ./windows
+    networks:
+      - network1
+  printer1:
+    build: ./printer
+    networks:
+      - network1
+  printer2:
+    build: ./printer
+    networks:
+      - network1
+networks:
+  network1:
