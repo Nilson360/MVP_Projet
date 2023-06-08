@@ -1,0 +1,5 @@
+# This is the Dockerfile for the Windows machine
+
+FROM mcr.microsoft.com/windows/servercore:ltsc2019
+RUN powershell.exe -Command Add-WindowsFeature Web-Server
+CMD ["cmd.exe"]
