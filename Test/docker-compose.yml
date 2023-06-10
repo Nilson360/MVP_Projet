@@ -1,0 +1,20 @@
+networks:
+  backend: null
+services:
+  pc1:
+    build: .
+    networks:
+    - backend
+  pc2:
+    build: .
+    networks:
+    - backend
+  pc3:
+    build: .
+    networks:
+    - backend
+  pc4:
+    build: .
+    networks:
+    - backend
+version: '3'
